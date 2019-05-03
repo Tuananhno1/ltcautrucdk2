@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai12</title>
+</head>
+<body>
+<script>
+    let sotien = parseInt(prompt('Số tiền ban đầu:'));
+    let sothang = parseInt(prompt('Số tháng:'));
+    let laisuat = parseFloat(prompt('Lãi suât ngân hàng:'));
+    let tienlai = sotien*laisuat;
+
+    if(sothang == 1){
+        document.write('Tiền lãi = ' + tienlai);
+    } else if(sothang == 2){
+        sotien = sotien + tienlai;
+        document.write('Tiền lãi của tháng thứ 2 = ' + sotien*laisuat);
+    }
+
+</script>
+</body>
+</html>

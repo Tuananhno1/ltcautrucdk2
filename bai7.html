@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập hệ số a:'));
+    let b = parseFloat(prompt('Nhập hệ số b:'));
+    let c = parseFloat(prompt('Nhập hệ sô c:'));
+    let d = b*b - 4*a*c;
+    if(d < 0){
+        alert('pt vô nghiệm');
+    }
+    if(d == 0){
+        alert('pt có nghiệm là: '+ (-b/(2*a)));
+    }
+    if(d > 0){
+        alert('pt có 2 nghiệm là: ' + (-b+Math.sqrt(d)/(2*a))+ ' và '+ ( -b-Math.sqrt(d)/(2*a)));
+    }
+</script>
+</body>
+</html>
